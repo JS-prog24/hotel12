@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    background: linear-gradient(-148deg, rgba(17, 0, 0, 0.329)20%
+    ,rgba(7, 0, 0, 0.582)50%), url(BG2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.041);
+    display: flex;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.158);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+    
+}
+.navbarb{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.37);
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 0px 0px;
+    
+    
+
+}
+.navbar li a, .navbar li{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-weight: 800;
+    padding: 0px 30px;
+    
+    
+}
+.navbar li{
+    display: grid;
+    place-items: right;
+    
+}
+.navbar li:hover{
+    height: 70%;
+    display: grid;
+    place-items: center ;
+    background-color: rgba(255, 255, 255, 0.082);
+    
+    
+}
+.navbar li a:hover{
+    color: rgb(255, 136, 0);
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        display: grid;
+        place-items: center;
+          
+    }
+    .logo{
+        display: grid;
+        place-items: center;
+    }
+    .logo img{
+        width: 70px;   
+    }
+    .navbar ul{
+        height: 50px;
+        border-top: 2px solid white;
+        width: 90%;
+    }
+    .navbar ul li{
+        padding: 0;
+    }
+    
+}
+
+.contain{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.content-left{
+    display: grid;
+    place-items: center;
+    width: 55%;
+    height: 100%;
+    
+}
+.intro{
+    color: white;
+    animation: left 3s ease-in-out;
+}
+@keyframes left {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+.intro h2{
+    font-size: 2rem;
+    transition: 0.5s ease;
+}
+.intro h1{
+    font-size: 5rem;
+    color: rgb(255, 136, 0);
+    transition: 0.5s ease;
+    letter-spacing: 10px;
+
+    
+}
+.intro button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: orangered;
+    font-weight: 800;
+    
+}
+
+.intro button:hover{
+    width: 200px;
+}
+@media screen and (max-width: 900px) {
+   
+    .content-left{
+        width: 100%;
+        height: 50%;
+        display: grid;
+        text-align: center;
+    }
+    .intro{
+        color: white;
+    }
+    .intro h2{
+        font-size: 1.5rem;
+    }
+    .intro h1{
+        font-size: 3rem;
+        color: rgb(255, 136, 0);
+        
+    }
+    .intro button{
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: orangered;
+        font-size: 0.7rem;
+        font-weight: 800;
+    
+    }
+    .form{
+        display: grid;
+        place-items: center;
+    }
+    
+}
+
+.form{
+    height: 100vh;
+    width: 45%;
+    display: grid;
+    place-items: center;
+    animation: left 1s ease;
+}
+.form .login{
+    width: 300px;
+    height: 52vh;
+    background-color: rgba(37, 37, 37, 0.774);
+    border-radius: 5px;
+    padding: 10px 25px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.726);
+    
+}
+.input{
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.login h1{
+    text-align: center;
+    color: white;
+    margin: 10px 0px;
+}
+.login .wrap{
+    height: 30px;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 30px 0px; 
+}
+
+.login input{
+    width: 100%;
+    height: 0px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+    outline: none;
+    font-size: 1rem;
+    padding: 0px 5px;
+    background-color: rgb(170, 235, 255);
+     
+}
+.login input:hover{
+    height: 30px;
+    box-shadow: 1px 1px 10px 1px rgb(0, 217, 255);
+}
+
+/*log in*/
+.login button{
+    margin: 0px 0px 10px 0px;
+    width: 80%;
+    height: 35px;
+    position: relative;
+    background-color: transparent;
+    border: 3px solid black;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 6px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 1s ease;
+    z-index: 1;
+}
+.login button::before{
+    content: "";
+    background-color: rgb(0, 217, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 0vh;
+    transition: 1s ease;
+    z-index: -1;
+    
+}
+.login button:hover{
+    border: 2px solid rgb(0, 217, 255);
+    box-shadow: 1px 1px 10px 1px rgb(0, 217, 255);
+    color: black;
+}
+.login button:hover::before{
+    width: 103%;
+    
+}
+/*Sign up*/
+.login .sign{
+    margin: 10px 0px 0px 0px;
+    width: 80%;
+    height: 35px;
+    position: relative;
+    background-color: transparent;
+    border: 3px solid black;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 6px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 1s ease;
+    z-index: 1;
+}
+.login .sign::before{
+    content: "";
+    background-color: rgb(255, 62, 136);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 0vh;
+    transition: 1s ease;
+    z-index: -1;
+    
+}
+.login .sign:hover{
+    border: 2px solid rgb(255, 62, 136);
+    box-shadow: 1px 1px 10px 1px rgb(255, 62, 136);
+    color: black;
+}
+.login .sign:hover::before{
+    width: 103%;
+    
+}
+@media screen and (max-width: 900px) {
+    .container{
+        height: 200vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        
+    }
+    .contain{
+        display: block;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+    }
+    
+}
+
+
+
+.container2{
+    height: 100vh;
+    
+    
+}
