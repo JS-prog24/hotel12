@@ -1,11 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 .container{
-    background: linear-gradient(-148deg, rgba(17, 0, 0, 0.329)20%
-    ,rgba(7, 0, 0, 0.582)50%), url(BG2.jpg);
+    background: linear-gradient(-148deg, rgba(17, 0, 0, 0.096)20%
+    ,rgba(7, 0, 0, 0.473)50%), url(BG2.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,8 @@
     
 }
 .navbar{
-    background-color: rgba(0, 0, 0, 0.041);
+    backdrop-filter: blur(20px);
+    background: transparent;
     display: flex;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.158);
     position: fixed;
@@ -114,7 +115,7 @@
     }
     .navbar ul li{
         padding: 0;
-        font-size: 8px;
+        font-size: 15px;
         
     }
     
@@ -152,10 +153,23 @@
 }
 .intro h1{
     font-size: 5rem;
-    color: rgb(255, 136, 0);
     transition: 0.5s ease;
     letter-spacing: 10px;
-
+    background: linear-gradient(90deg,yellow, orange,rgb(194, 52, 75),rgb(245, 13, 64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: huerotate 7s alternate infinite;
+}
+@keyframes huerotate {
+    0%{
+        filter: hue-rotate(279deg);
+    }
+    50%{
+        filter: hue-rotate(179deg);
+    }
+    100%{
+        filter: hue-rotate(12deg);
+    }
     
 }
 .intro button{
@@ -218,7 +232,7 @@
             font-size: 1.2rem;
         }
         .intro h1{
-            font-size: 2rem;
+            font-size: 2.9rem;
             color: rgb(255, 136, 0);
             
         }
@@ -247,11 +261,12 @@
 }
 .form .login{
     width: 300px;
-    height: 52vh;
-    background-color: rgba(37, 37, 37, 0.774);
+    height: 57vh;
+    background-color: rgba(37, 37, 37, 0.185);
     border-radius: 5px;
     padding: 10px 25px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(5px);
     
 }
 .input{
@@ -415,9 +430,323 @@
 }
 
 
+/* About us */
+.Aboutus{
+    height: 130vh;
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.aboutcontent{
+    height: 80%;
+    width: 90%;
+    
+}
+.aboutcontent h1{
+    font-size: 3rem;
+    margin: 30px 0px;
+}
+.picture{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.picture img:nth-child(1){
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 1px 10px 1px black;
+    
+}
+.picture img:nth-child(2){
+    width: 300px;
+    height: 400px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+.picture img:nth-child(3){
+    width: 300px;
+    height: 250px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+.about1{
+    animation: animate 3s ease;
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+        height: 20%;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
-.container2{
-    height: 100vh;
+@media screen and (max-width: 1000px) {
+    .Aboutus{
+        height: 100vh;
+        background-color: rgb(24, 24, 24);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .aboutcontent{
+        height: 80%;
+        width: 90%;
+        
+    }
+    .aboutcontent h1{
+        font-size: 2rem;
+        margin: 30px 0px;
+    }
+    .aboutcontent{
+        font-size: 0.9rem;
+    }
+    .picture{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+    }
+    .picture img:nth-child(1){
+        width: 120px;
+        height: 100px;
+        box-shadow: 1px 1px 10px 1px black;
+        
+    }
+    .picture img:nth-child(2){
+        width: 120px;
+        height: 200px;
+        box-shadow: 1px 1px 10px 1px black;
+    }
+    .picture img:nth-child(3){
+        width: 120px;
+        height: 150px;
+        box-shadow: 1px 1px 10px 1px black;
+    }
     
+}
+
+
+
+/* Rooms */
+.rooms{
+    height: 200vh;
+    background-color: rgb(241, 226, 216);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.roomcontent{
+    height: 80%;
+    width: 90%;
     
+}
+.roomcontent h1{
+    font-size: 3rem;
+    margin: 20px 0px;
+}
+/*room1*/
+.roomcontent .cont1{
+    width: 100%;
+    height: 45%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.roomcontent .cont1 img{
+    width: 40%;
+    height: 90%;
+    box-shadow: 1px 1px 10px 1px black;
+    
+}
+.room1{
+    animation: fade 3s ease;
+}
+.roomcontent .cont1 .text{
+    text-align: start;
+    width: 50%;
+    height: 90%;   
+}
+.roomcontent .cont1 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.roomcontent .cont1 .title .line{
+    margin: 5px 5px 0px 5px;
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    
+}
+.roomcontent .cont1 .text h1{
+    font-size: 2rem;
+}
+.roomcontent .cont1 p{
+    font-size: 1.8rem;
+    margin: 5px 40px;
+}
+/*room2*/
+.roomcontent .cont2{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.roomcontent .cont2 img{
+    width: 40%;
+    height: 90%;
+    box-shadow: 1px 1px 10px 1px black;
+}
+.room2{
+    animation: fade 5s ease;
+}
+.roomcontent .cont2 .text{
+    text-align: start;
+    width: 50%;
+    height: 90%;
+   
+    
+}
+.roomcontent .cont2 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.roomcontent .cont2 .title .line{
+    margin: 5px 5px 0px 5px;
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    
+}
+.roomcontent .cont2 .text h1{
+    font-size: 2rem;
+}
+.roomcontent .cont2 p{
+    font-size: 1.8rem;
+    margin: 5px 40px;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .roomcontent .cont1{
+        width: 100%;
+        height: 30%;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .roomcontent .cont1 img{
+        width: 40%;
+        height: 90%;
+        box-shadow: 1px 1px 10px 1px black;
+        
+    }
+    .room1{
+        animation: fade 3s ease;
+    }
+    .roomcontent .cont1 .text{
+        text-align: start;
+        width: 50%;
+        height: 90%;
+       
+        
+    }
+    .roomcontent .cont1 .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+       
+    }
+    
+    .roomcontent .cont1 .title .line{
+        margin: 5px 5px 0px 5px;
+        width: 30%;
+        height: 2px;
+        background-color: black;
+        
+    }
+    .roomcontent .cont1 .text h1{
+        font-size: 1rem;
+    }
+    .roomcontent .cont1 p{
+        font-size: 0.8rem;
+        margin: 5px 40px;
+    }
+    /*room2*/
+    .roomcontent .cont2{
+        width: 100%;
+        height: 30%;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .roomcontent .cont2 img{
+        width: 40%;
+        height: 90%;
+        box-shadow: 1px 1px 10px 1px black;
+        
+    }
+    .room2{
+        animation: fade 3s ease;
+    }
+    .roomcontent .cont2 .text{
+        text-align: start;
+        width: 50%;
+        height: 90%;
+       
+        
+    }
+    .roomcontent .cont2 .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+       
+    }
+    
+    .roomcontent .cont2 .title .line{
+        margin: 5px 5px 0px 5px;
+        width: 30%;
+        height: 2px;
+        background-color: black;
+        
+    }
+    .roomcontent .cont2 .text h1{
+        font-size: 1rem;
+    }
+    .roomcontent .cont2 p{
+        font-size: 0.8rem;
+        margin: 5px 40px;
+    }
 }
