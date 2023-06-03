@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+   
+    
 }
 .container{
     background: linear-gradient(-148deg, rgba(17, 0, 0, 0.096)20%
@@ -9,6 +11,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+   
     
     
 }
@@ -20,6 +23,7 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    
     
     
 }
@@ -144,6 +148,7 @@
     from{
         opacity: 0;
         
+        
     }
     to{
         opacity: 1;
@@ -157,11 +162,18 @@
 .intro h1{
     font-size: 5rem;
     transition: 0.5s ease;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     background: linear-gradient(90deg,yellow, orange,rgb(194, 52, 75),rgb(245, 13, 64));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: huerotate 7s alternate infinite;
+    font-family: Brush Script MT;
+}
+.intro h3{
+    font-family: Brush Script MT;
+    letter-spacing: 8px;
+    font-weight: 200;
+    font-size: 1.8rem;
 }
 @keyframes huerotate {
     0%{
@@ -176,7 +188,7 @@
     
 }
 .intro button{
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 20px;
     border: none;
     background-color: orangered;
@@ -447,6 +459,8 @@
     height: 80%;
     width: 90%;
     
+   
+    
 }
 .aboutcontent h1{
     font-size: 3rem;
@@ -456,35 +470,42 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
-    padding: 40px;
+    height: 60%;
+    padding: 50px 0px;
+
 }
 .picture img:nth-child(1){
     width: 300px;
     height: 300px;
     box-shadow: 1px 1px 10px 1px black;
+ 
     
 }
 .picture img:nth-child(2){
     width: 300px;
     height: 400px;
     box-shadow: 1px 1px 10px 1px black;
+ 
 }
 .picture img:nth-child(3){
     width: 300px;
     height: 250px;
     box-shadow: 1px 1px 10px 1px black;
+    
 }
 .about1{
+    
     animation: animate 3s ease;
+    
 }
 @keyframes animate {
     from{
         opacity: 0;
-        height: 20%;
+        transform: translatey(30%);
     }
     to{
         opacity: 1;
+        
     }
 }
 
@@ -571,6 +592,7 @@
     width: 40%;
     height: 90%;
     box-shadow: 1px 1px 10px 1px black;
+    border-radius: 100px 0px 100px 0px;
     
 }
 .room1{
@@ -598,6 +620,7 @@
 }
 .roomcontent .cont1 .text h1{
     font-size: 2rem;
+    font-family: Brush Script MT;
 }
 .roomcontent .cont1 p{
     font-size: 1.8rem;
@@ -615,6 +638,7 @@
     width: 40%;
     height: 90%;
     box-shadow: 1px 1px 10px 1px black;
+    border-radius: 0px 100px 0px 100px;
 }
 .room2{
     animation: fade 5s ease;
@@ -643,6 +667,7 @@
 }
 .roomcontent .cont2 .text h1{
     font-size: 2rem;
+    font-family: Brush Script MT;
 }
 .roomcontent .cont2 p{
     font-size: 1.8rem;
@@ -651,11 +676,13 @@
 @keyframes fade {
     from{
         opacity: 0;
+        transform: translatey(20%);
     }
     to{
         opacity: 1;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .roomcontent h1{
         font-size: 2rem;
@@ -673,8 +700,7 @@
     .roomcontent .cont1 img{
         width: 40%;
         height: 75%;
-        box-shadow: 1px 1px 10px 1px black;
-        
+        box-shadow: 1px 1px 10px 1px black;  
     }
     .room1{
         animation: fade 3s ease;
@@ -756,4 +782,65 @@
         font-size: 0.6rem;
         margin: 5px 40px;
     }
+}
+
+footer{
+    background-color: rgb(24, 24, 24);
+    height: 80vh;
+    width: 100%;
+    
+}
+footer .title{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+    
+    
+}
+.contacts{
+    display: grid;
+    place-items: center;
+}
+footer .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.details .leftside{
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+.details .rightside{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contform{
+    height: 45vh;
+    width: 50vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+   
+   
+}
+
+.contform input{
+    outline: none;
+    margin: 3px 0px 20px 0px;
+    width: 100%;
+    height: 4vh;
+}
+.leftside .icons img{
+    margin: 20px 0px;
+    width: 50px;
+  
 }
