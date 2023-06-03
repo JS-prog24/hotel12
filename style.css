@@ -844,3 +844,35 @@ footer .details{
     width: 50px;
   
 }
+@media screen and (max-width: 1000px) {
+    
+    footer .title{
+        font-size: 1rem;
+        
+    }
+    .details .leftside{
+        font-size: .8rem;
+    }
+    .leftside .icons img{
+        margin: 20px 0px;
+        width: 20px;
+      
+    }
+    .contform{
+ 
+        padding: 10px;
+        margin: 0px 10px;
+       
+    }
+    .contform{
+        font-size: .7rem;
+    }
+    .contform input{
+        font-size: .7rem;
+        outline: none;
+        margin: 3px 0px 20px 0px;
+        width: 100%;
+        height: 2vh;
+    }
+
+}
