@@ -276,7 +276,7 @@
 }
 .form .login{
     width: 300px;
-    height: 61vh;
+    height: 57vh;
     background-color: rgba(37, 37, 37, 0.185);
     border-radius: 5px;
     padding: 10px 25px;
@@ -856,16 +856,20 @@ footer .details{
     .leftside .icons img{
         margin: 20px 0px;
         width: 20px;
-      
+       
+    }
+    .details .rightside{
+        width: 100%;
     }
     .contform{
- 
+        width: 30vh;
         padding: 10px;
         margin: 0px 10px;
-       
+    
     }
     .contform{
         font-size: .7rem;
+       
     }
     .contform input{
         font-size: .7rem;
